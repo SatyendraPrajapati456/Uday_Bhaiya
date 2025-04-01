@@ -1,0 +1,92 @@
+/* login.css */
+
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.left {
+  flex: 1;
+  background: linear-gradient(135deg, #5e60ce, #64dfdf);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  color: white;
+  text-align: center;
+}
+
+.left h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  line-height: 1.4;
+}
+
+.right {
+  flex: 1;
+  background-color: white;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right h2 {
+  margin-bottom: 2rem;
+  color: #333;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.right input {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.right input:focus {
+  outline: none;
+  border-color: #5e60ce;
+  box-shadow: 0 0 0 2px rgba(94, 96, 206, 0.2);
+}
+
+.right button {
+  background-color: #5e60ce;
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.right button:hover {
+  background-color: #4849bd;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+    border-radius: 0;
+  }
+
+  .left {
+    padding: 3rem 1.5rem;
+  }
+
+  .right {
+    padding: 2rem 1.5rem;
+  }
+}

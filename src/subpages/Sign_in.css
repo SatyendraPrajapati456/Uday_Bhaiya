@@ -1,0 +1,167 @@
+Sign_in.css
+
+/* Use a unique class name to avoid conflicts */
+.container {
+  display: flex;
+  min-height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+/* Left section styles */
+.left-section {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+.overlay-text h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.4;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Right section styles */
+.right-section {
+  flex: 1;
+  background-color: white;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right-section h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.right-section p {
+  margin-bottom: 2rem;
+  color: #666;
+}
+
+.right-section p a {
+  color: #5e60ce;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.right-section p a:hover {
+  text-decoration: underline;
+}
+
+.right-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.name-fields {
+  display: flex;
+  gap: 1rem;
+}
+
+.input-field {
+  padding: 0.8rem 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #5e60ce;
+  box-shadow: 0 0 0 2px rgba(94, 96, 206, 0.2);
+}
+
+.full-width {
+  width: 100%;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.checkbox-container label {
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.checkbox-container a {
+  color: #5e60ce;
+  text-decoration: none;
+}
+
+.checkbox-container a:hover {
+  text-decoration: underline;
+}
+
+.signup-btn {
+  background-color: #5e60ce;
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 1rem;
+}
+
+.signup-btn:hover {
+  background-color: #4849bd;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    border-radius: 0;
+  }
+
+  .left-section {
+    height: 30vh;
+  }
+
+  .name-fields {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  .right-section {
+    padding: 2rem 1.5rem;
+  }
+}
