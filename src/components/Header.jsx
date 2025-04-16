@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate, Outlet, Link } from "react-router-dom";
+import logo from "../assets/logo2.avif";
 
 function Header() {
   const navigate = useNavigate();
@@ -10,7 +11,7 @@ function Header() {
         <nav>
           <div className="hero">
             <img
-              src="/images/logo2.avif"
+              src={logo}
               alt="Futuristic sustainable city"
               className="logo"
             />

@@ -34,7 +34,6 @@ function Products() {
       description: "Selling construction materials",
       image: card04,
       alt: "Data analysis setup",
-
       link: "/construction-material", // Route path for Construction Material
     },
   ];
