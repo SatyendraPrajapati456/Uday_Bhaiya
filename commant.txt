@@ -1,0 +1,42 @@
+step 1-   npm create vite@latest my-app --template react
+
+    it create a vite and react app
+
+step 2-select the required framework and language 
+
+    it will helps to select the need 
+
+step 3- change the directory by cd app_name
+
+    it will change the directory of the file 
+
+step 4-install npm by running the command   npm install
+
+    it will install the npm required libraries 
+
+step 5- npm run dev this command will run the react code
+    
+    it will create a link so by ctrl+click on the link the app will display
+
+
+
+
+
+if any one wanted to create through node than 
+
+step 1-npx create-react-app app_name 
+
+    run the command react app get created
+
+step 2- change the directory by cd app_name
+
+    you get enter in the app directory
+
+step 3-for running the app command npm start
+
+    it will run the app
+
+step 4- if you are linking any path than you need to run- npm install react-router-dom   
+
+    it will install a local router model in package manager
+     
